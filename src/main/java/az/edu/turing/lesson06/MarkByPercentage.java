@@ -1,11 +1,10 @@
 package az.edu.turing.lesson06;
+
 import java.util.Scanner;
 
 public class MarkByPercentage {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Ask the user to input a percentage
         System.out.print("Enter the percentage: ");
         double percentage = scanner.nextDouble();
         String grade;
@@ -20,7 +19,6 @@ public class MarkByPercentage {
         } else {
             grade = "F";
         }
-
         System.out.println("Grade: " + grade);
     }
 
