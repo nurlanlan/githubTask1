@@ -9,6 +9,6 @@ public class MathMethods1 {
         int a = scanner.nextInt();
         System.out.print("Enter the second digit of operation : ");
         int b = scanner.nextInt();
-        System.out.println("Result: "+a % b);
+        System.out.println("Result: " + a % b);
     }
 }
