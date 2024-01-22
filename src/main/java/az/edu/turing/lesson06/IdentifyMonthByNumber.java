@@ -12,7 +12,7 @@ public class IdentifyMonthByNumber {
         }else if (NumbeOfMonth ==1) {
             System.out.println("January");
         } else if (NumbeOfMonth ==2) {
-            System.out.println("Feburary");
+            System.out.println("February");
         }else if (NumbeOfMonth ==3) {
             System.out.println("March");
         }else if (NumbeOfMonth ==4) {
@@ -30,7 +30,7 @@ public class IdentifyMonthByNumber {
         }else if (NumbeOfMonth ==10) {
             System.out.println("October");
         }else if (NumbeOfMonth ==11) {
-            System.out.println("Novemver");
+            System.out.println("November");
         }else if (NumbeOfMonth ==12) {
             System.out.println("December");
         }
