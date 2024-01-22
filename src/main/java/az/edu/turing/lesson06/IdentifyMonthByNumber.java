@@ -7,7 +7,9 @@ public class IdentifyMonthByNumber {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number of month");
         int NumbeOfMonth = scanner.nextInt();
-        if(NumbeOfMonth==1){
+        if(NumbeOfMonth<1 || NumbeOfMonth>13){
+            System.out.println("There is no such a month");
+        }else if (NumbeOfMonth ==1) {
             System.out.println("January");
         } else if (NumbeOfMonth ==2) {
             System.out.println("Feburary");
