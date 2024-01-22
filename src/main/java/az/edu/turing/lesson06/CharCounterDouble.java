@@ -6,11 +6,10 @@ public class CharCounterDouble {
     public static void main(String[] args) {
 
 
+        Scanner scanner = new Scanner(System.in);
 
-    Scanner scanner = new Scanner(System.in);
-
-    String cumle = scanner.nextLine();
-    int eded = cumle.length();
-    System.out.println(eded * 2);
-   }
+        String cumle = scanner.nextLine();
+        int eded = cumle.length();
+        System.out.println(eded * 2);
+    }
 }
