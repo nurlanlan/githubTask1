@@ -2,7 +2,7 @@ package az.edu.turing.lesson07;
 
 import java.util.Scanner;
 
-public class FIndNumberBolenleri {
+public class FIndNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
