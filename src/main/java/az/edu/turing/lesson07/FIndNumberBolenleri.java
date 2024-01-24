@@ -8,8 +8,8 @@ public class FIndNumberBolenleri {
         int number = scanner.nextInt();
 
         for (int i = 1; i <= number; i++) {
-            int x = number%i;
-             if (x==0){
+            int x = number % i;
+            if (x == 0) {
                 System.out.println(i);
 
             }
