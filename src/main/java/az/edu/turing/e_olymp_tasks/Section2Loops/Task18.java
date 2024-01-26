@@ -1,4 +1,4 @@
-package az.edu.turing.e_olymp_tasks.Section2;
+package az.edu.turing.e_olymp_tasks.Section2Loops;
 
 import java.util.Scanner;
 
