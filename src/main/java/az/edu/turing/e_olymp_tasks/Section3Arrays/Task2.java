@@ -6,7 +6,7 @@ public class Task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int row = scanner.nextInt();
-        int column = scanner.nextInt();
+        int column = row;
         int number = 1;
         int[][] array = new int[row][column];
         for (int i = 0; i < row; i++) {
