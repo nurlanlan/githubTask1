@@ -8,5 +8,6 @@ public class CentenceDetectorApp {
         System.out.println(centence.toLowerCase());
         System.out.println(centence.indexOf("WhatsApp"));
         System.out.println(centence.toUpperCase());
+        System.out.println(centence.trim());
     }
 }
