@@ -2,25 +2,35 @@ package az.edu.turing.MiniFamilyProject;
 
 public class FamilyApp {
     public static void main(String[] args) {
-        // family 1
-        Human fatherF1 = new Human("Micheal", "Jackson", 1958);
-        Human motherF1 = new Human("Angelina", "Jolie", 1971);
-        Human Mamed = new Human("Mamed", "Mamedov", 2001, motherF1, fatherF1);
-        Pet petF1 = new Pet("dog", "toplan");
-        Human Heyder = new Human("Heyder", "Emiraslanov", 1999, 122, petF1, motherF1, fatherF1);
+        // Create families
+        Human mother1 = new Human("Alice", "Smith", 1980,101);
+        Human father1 = new Human("Bob", "Smith", 1978,120);
+        Family family1 = new Family(mother1, father1);
 
-//        family2
-        Human fatherF2 = new Human("Faiq", "Agayev", 1980);
-        Human motherF2 = new Human("Elza", "Seyidcahan", 1975);
-        Human Mikail = new Human("Mikail", "Semedov", 2004, motherF2, fatherF2);
-        Pet petF2 = new Pet("cat", "meow");
-        Human Ismail = new Human("Ismail", "Emiraslanov", 2006, 122, petF2, motherF2, fatherF2);
+        Human mother2 = new Human("Carol", "Johnson", 1985,102);
+        Human father2 = new Human("Dave", "Johnson", 1983,99);
+        Family family2 = new Family(mother2, father2);
 
+        // Add children to families
+        Human child1 = new Human("Eve", "Smith", 2005,111);
+        family1.addChild(child1);
 
+        Human child2 = new Human("Frank", "Johnson", 2008,80);
+        family2.addChild(child2);
 
-        System.out.println(Mikail);
-        System.out.println(Ismail);
-        System.out.println(petF2);
+        // Add pets to families
+        Pet dog1 = new Pet("Dog", "Rex", 5, 75, new String[]{"eat", "sleep"});
+        family1.setPet(dog1);
+
+        // Print family information
+        System.out.println("Family 1 with pet:");
+        System.out.println(family1);
+
+        System.out.println("Family 2 without pet:");
+//        System.out.println(family2);
+
+        // Get count of family members
+        System.out.println("Family 1 member count: " + family1.countFamily());
+        System.out.println("Family 2 member count: " + family2.countFamily());
     }
-
 }

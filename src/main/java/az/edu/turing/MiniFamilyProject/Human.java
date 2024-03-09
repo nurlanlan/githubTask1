@@ -1,66 +1,90 @@
 package az.edu.turing.MiniFamilyProject;
 
+import java.util.Arrays;
+
 public class Human {
-    String name;
-    String surname;
-    int birthYear;
-    int iq; //1-100 %
-    Pet pet;
-    Human mother;
-    Human father;
-    String[][] schedule;
+    private String name;
+    private String surname;
+    private int birthYear;
+    private int iq; //1-100 %
+    private Family family;
+    private String[][] schedule;
 
-    public Human(String name, String surname, int birthYear) {
-        this.name = name;
-        this.surname = surname;
-        this.birthYear = birthYear;
-//        constructor -- name, surname, birthYear;
+
+    public String getName() {
+        return name;
     }
 
-    public Human(String name, String surname, int birthYear, Human mother, Human father) {
+    public void setName(String name) {
         this.name = name;
-        this.surname = surname;
-        this.birthYear = birthYear;
-        this.mother = mother;
-        this.father = father;
-//        constructor -- name,surname,birthYear,mother,father;
     }
 
-    public Human(String name, String surname, int birthYear, int iq, Pet pet, Human mother, Human father /*String[][] schedule*/) {
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public int getBirthYear() {
+        return birthYear;
+    }
+
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
+    }
+
+    public int getIq() {
+        return iq;
+    }
+
+    public void setIq(int iq) {
+        this.iq = iq;
+    }
+
+    public Family getFamily() {
+        return family;
+    }
+
+    public void setFamily(Family family) {
+        this.family = family;
+    }
+
+
+    public String[][] getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(String[][] schedule) {
+        this.schedule = schedule;
+    }
+
+
+    public Human(String name, String surname, int birthYear, int iq) {
         this.name = name;
         this.surname = surname;
         this.birthYear = birthYear;
         this.iq = iq;
-        this.pet = pet;
-        this.mother = mother;
-        this.father = father;
-       // this.schedule = schedule;
-//        consturctor -- all fields;
     }
 
     public Human() {
 //        empty constructor;
     }
 
-    public void greet() {
-        System.out.println("Hello " + pet.nickname);
-    }
-
-    public void describePet() {
-        System.out.print("I have an " + pet.species + " is " + pet.age + " years old, he is " +
-                (pet.trickLevel + (pet.trickLevel < 50 ? " almost not silly" : " very silly")));
-//        "I have an [species] is [age] years old, he is [very sly]>50/[almost not sly]<50".
-    }
 
     public String toString() {
-        return "Human{name='" + name + '\'' +
+        return "Human{" +
+                "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", year=" + birthYear +
+                ", birthYear=" + birthYear +
                 ", iq=" + iq +
-                ", mother='" + mother + '\'' +
-                ", father='" + father + '\'' +
-                ", pet=" + pet +
+                ", family=" + (family != null ? "Family{mother=" + family.getMother().getName() + ", father=" + family.getFather().getName()
+                + ", children=" + Arrays.toString(family.getChildren()) + ", pet=" + family.getPet() + "}" : "null") +
                 '}';
-//        overriding toString
+        //        overriding toString
     }
+
+
 }
+
