@@ -1,11 +1,12 @@
 package az.edu.turing.Module1.Lesson04;
 
-public class Apple {
+public class Apple extends Fruit{
     String species;
     String color;
     String cameFromWhere;
 
-    public Apple(String species, String color, String cameFromWhere) {
+    public Apple(String species, String color, String cameFromWhere,String name) {
+        super(name);
         this.species = species;
         this.color = color;
         this.cameFromWhere = cameFromWhere;

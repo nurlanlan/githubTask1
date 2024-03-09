@@ -1,6 +1,6 @@
 package az.edu.turing.Module1.Lesson04;
 
-public class Fruit {
+public class Fruit{
     String name;
 
     public Fruit(String name) {
