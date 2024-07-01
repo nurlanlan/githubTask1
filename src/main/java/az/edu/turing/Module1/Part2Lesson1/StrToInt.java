@@ -9,9 +9,11 @@ public class StrToInt {
         String number1 = scanner.nextLine();
         System.out.print("Enter second digit: ");
         String number2 = scanner.nextLine();
+
         int numberInt1 = Integer.parseInt(number1);
         int numberInt2 = Integer.parseInt(number2);
         int result = numberInt1 / numberInt2;
-        System.out.println("Result: "+result);
+
+        System.out.println("Result: " + result);
     }
 }
